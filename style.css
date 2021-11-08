@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --blue: hsl(248, 32%, 49%);
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background-color: hsl(0, 100%, 74%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  background-image: url('./images/bg-intro-mobile.png');
+  background-position: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 6rem;
+  text-align: center;
+  width: 350px;
+  overflow-x: hidden;
+  margin-bottom: 2rem;
+}
+
+.card-trial {
+  background-color: var(--blue);
+  /* padding: 2rem; */
+  width: 350px;
+  margin: 2rem 0;
+  text-align: center;
+  padding: 1rem 0;
+  border-radius: 0.5rem;
+}
+
+#description {
+  color: white;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  opacity: 0.9;
+}
+
+#learn-to-code {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2rem;
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+}
+
+#try-it-free {
+  color: white;
+  font-weight: bold;
+}
+
+.card-trial {
+  color: white;
+  box-shadow: 0 5px 25px -10px black;
+}
+
+.text-trial {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.form-card {
+  background-color: white;
+  border-radius: 0.5rem;
+  width: 350px;
+  margin: 0 0;
+  padding: 1rem 0;
+}
+
+.form-card input {
+  padding: 0.8rem 0;
+  margin: 0.8rem auto;
+  border: 1px solid var(--grayish-blue);
+  text-align: initial;
+  padding-left: 15px;
+  width: 285px;
+  border-radius: 5px;
+  font-weight: 600;
+  color: gray;
+}
+
+button#claim {
+  background-color: var(--green);
+  width: 300px;
+  padding: 1rem 0;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+#terms-agreement {
+  width: 275px;
+  margin: 1rem auto;
+  font-size: 0.8rem;
+  color: gray;
+}
+
+#terms-agreement span {
+  font-weight: 600;
+  color: var(--red);
+}
+
+.form-field.error {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field.error input {
+  border: 1px solid red;
+  background: url(./images/icon-error.svg) no-repeat 350px 7.5px;
+}
+small {
+  width: 385px;
+  margin: 0 auto;
+  text-align: end;
+}
+
+@media screen and (min-width: 1020px) {
+  .container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+  }
+
+  #learn-to-code {
+    width: 450px;
+    font-size: 3rem;
+    text-align: start;
+    line-height: 3rem;
+  }
+  #description {
+    width: 500px;
+    text-align: start;
+  }
+  .descriptions {
+    margin-right: 2rem;
+  }
+
+  .text-trial {
+    width: auto;
+  }
+
+  .card-trial {
+    width: 500px;
+  }
+
+  .form-card {
+    width: 500px;
+  }
+
+  .form-card input {
+    width: 385px;
+  }
+
+  button#claim {
+    width: 400px;
+  }
+
+  p#terms-agreement {
+    width: 400px;
+    font-size: 0.6rem;
+  }
+}

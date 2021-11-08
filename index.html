@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="descriptions">
+        <h1 id="learn-to-code">Learn to code by watching others</h1>
+
+        <p id="description">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+
+      <div class="cards">
+        <div class="card card-trial">
+          <div class="text-trial">
+            <span id="try-it-free">Try it free 7 days</span>
+            then $20/mo. thereafter
+          </div>
+        </div>
+        <div class="card form-card">
+          <form id="form" class="form">
+            <div class="form-field">
+              <input
+                type="text"
+                placeholder="First Name"
+                id="first-name"
+                autocomplete="off"
+                required
+              />
+              <small></small>
+            </div>
+
+            <div class="form-field error">
+              <input
+                type="text"
+                placeholder="Last Name"
+                id="last-name"
+                autocomplete="off"
+                required
+              />
+
+              <small></small>
+            </div>
+
+            <div class="form-field">
+              <input type="email" placeholder="Email" id="email" required />
+              <small></small>
+            </div>
+
+            <div class="form-field">
+              <input
+                type="password"
+                id="password"
+                placeholder="Password"
+                autocomplete="off"
+                required
+              />
+              <small></small>
+            </div>
+
+            <div class="form-field">
+              <button type="submit" id="claim">Claim your free trial</button>
+            </div>
+
+            <p id="terms-agreement">
+              By clicking the button, you are agreeing to our
+              <span>Terms and Services</span>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
